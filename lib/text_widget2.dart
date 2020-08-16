@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class TextWidget2 extends StatelessWidget {
-  final String widget2;
-
-  TextWidget2({this.widget2});
   @override
   Widget build(BuildContext context) {
-    return Container(child: Text(widget2));
+    return Container(child: Text(Provider.of<String>(context)));
   }
 }
